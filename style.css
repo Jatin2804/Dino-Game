@@ -1,0 +1,59 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.game
+{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 15px;
+    background-image: url(images/sky.gif);
+}
+.ground
+{
+    width: 500px;
+    height: 10px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: #964123;
+}
+#dino
+{
+    position:relative;
+    top: 142px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#block
+{
+    position: relative;
+    top: 135px;
+    margin-top: 20px;
+    /* margin: -55px; */
+}
+.animate
+{
+    animation: jump 0.3s linear;
+}
+@keyframes jump {
+    0%{
+        top: 140px;
+    }
+    30%{
+        top: 70px;
+    }
+    50%{
+        top: 50px;
+    }
+    70%{
+        top: 70px;
+    }
+    100%{
+        top: 140px;
+    }
+}
